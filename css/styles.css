@@ -1,0 +1,162 @@
+ body{
+     margin: 0;
+     background: linear-gradient(45deg, #277469, #2ec1ac, #c0cc42);
+     padding: 3% 10%;
+     text-align: center;
+ }
+
+ /*header section*/
+.header{
+    background: linear-gradient(180deg, #277469, #2ec1ac, #525347);
+    opacity: 0.8;
+}
+
+ h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 6rem;
+    color: white;
+    animation-name: h1-header;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+ }
+
+ @keyframes h1-header{
+     0%{
+         color: white;
+     }
+     50%{
+         transform: scale(1.1);
+     }
+     100%{
+         color: black;
+     }
+ }
+
+ /*artiste section*/
+ .artiste{
+    background: linear-gradient(180deg, #277469, #2ec1ac, #525347);
+ }
+
+ .artiste  img{
+    padding-top: 40px;
+    border-radius: 50%;
+    width: 30%;
+}
+
+
+ h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+    color: #eff48e;
+    animation-name: h3-hover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+ @keyframes h3-hover{
+     0%{
+        color: #eff48e;
+     }
+     50%{
+         color: #ddd8ca;
+     }
+     100%{
+         color: #e7dec8;
+     }
+ }
+
+/*article*/
+#article{
+    padding: 0 10%;
+    border: 2px solid #e7dec8;
+    margin-bottom: 20px;
+}
+
+#article p{
+    line-height: 1.5rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+/*cards*/
+#thumbnail{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 5% 5%;
+    padding: 3% 0 3% 10%;
+    background: linear-gradient(180deg, #277469, #2ec1ac, #525347);
+}
+#thumbnail h4{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+}
+#thumbnail ul{
+    list-style-type: square;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+    color: white;
+}
+
+.cardContent{
+    animation-name: border-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes border-color{
+    0%{
+        border: 1px solid white;
+        border-radius: 5%;
+    }
+    50%{
+        border: 1.5px solid #ddd8ca;
+        border-radius: 5%;
+    }
+    100%{
+        border: 2px solid #eff48e;
+        border-radius: 5%;
+    }
+}
+
+
+/*footer*/
+
+.footer p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    border: 1px solid white;
+    padding: 1%;
+}
+
+
+/*responsiveness*/
+
+@media (max-width: 450px){
+    /*artiste*/
+    .artiste  img{
+        padding-top: 40px;
+        border-radius: 50%;
+        width: 70%;
+    }
+
+
+    /*article section*/
+    #article p{
+        line-height: 2rem;
+        font-size: 1.1rem;
+    }
+
+    /*cards*/
+    #thumbnail{
+        display: block;
+        padding: 10% 5%;
+    }
+    .cardContent{
+        margin-bottom: 5%;
+    }
+
+}
